@@ -1,0 +1,32 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Outer orbit swoosh -->
+  <ellipse cx="100" cy="115" rx="76" ry="28" stroke="#2E8BCF" stroke-width="7" fill="none"
+    stroke-dasharray="240 160" stroke-linecap="round" transform="rotate(-20 100 115)" opacity="0.85"/>
+
+  <!-- Shield outer -->
+  <path d="M100 16L164 44V100C164 140 134 168 100 184C66 168 36 140 36 100V44L100 16Z"
+    fill="#03263A" stroke="#2E8BCF" stroke-width="5"/>
+
+  <!-- Shield inner dark -->
+  <path d="M100 36L144 58V100C144 128 124 150 100 162C76 150 56 128 56 100V58L100 36Z"
+    fill="#0B0F14"/>
+
+  <!-- Camera lens outer ring (dashed) -->
+  <circle cx="100" cy="100" r="30" fill="none" stroke="#2E8BCF" stroke-width="3" opacity="0.4" stroke-dasharray="8 6"/>
+
+  <!-- Camera lens body -->
+  <circle cx="100" cy="100" r="22" fill="rgba(46,139,207,0.15)" stroke="#2E8BCF" stroke-width="2.5"/>
+
+  <!-- Iris -->
+  <circle cx="100" cy="100" r="13" fill="rgba(46,139,207,0.4)"/>
+
+  <!-- Pupil -->
+  <circle cx="100" cy="100" r="7" fill="#2E8BCF"/>
+
+  <!-- Shine highlight -->
+  <circle cx="105" cy="95" r="3.5" fill="rgba(255,255,255,0.8)"/>
+  <circle cx="94" cy="106" r="1.5" fill="rgba(255,255,255,0.3)"/>
+
+  <!-- Top shield highlight -->
+  <path d="M100 16L130 30" stroke="#2E8BCF" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+</svg>
