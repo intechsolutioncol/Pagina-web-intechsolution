@@ -7,7 +7,7 @@ import {
   ChevronRight, ArrowUp,
 } from 'lucide-react';
 
-const WHATSAPP = 'https://wa.me/573001234567?text=Hola%2C%20necesito%20soporte%20t%C3%A9cnico';
+const WHATSAPP = 'https://wa.me/573003684990?text=Hola%2C%20necesito%20soporte%20t%C3%A9cnico';
 
 const SERVICES_LINKS = [
   'Soporte IT Empresarial',
@@ -165,17 +165,17 @@ export default function Footer() {
                   </div>
                 </div>
 
-                <a href="tel:+573001234567" className="flex items-center gap-3 group">
+                <a href="tel:+573003684990" className="flex items-center gap-3 group">
                   <Phone size={14} className="text-[#2E8BCF] shrink-0" />
                   <span className="text-white/55 text-[13px] group-hover:text-[#2E8BCF] transition-colors">
-                    +57 (300) 123-4567
+                    +57 (300) 368-4990
                   </span>
                 </a>
 
-                <a href="mailto:info@intechsolution.co" className="flex items-center gap-3 group">
+                <a href="mailto:ceo@intechsolution.com.co" className="flex items-center gap-3 group">
                   <Mail size={14} className="text-[#2E8BCF] shrink-0" />
                   <span className="text-white/55 text-[13px] group-hover:text-[#2E8BCF] transition-colors">
-                    info@intechsolution.co
+                    ceo@intechsolution.com.co
                   </span>
                 </a>
 

@@ -199,7 +199,7 @@ export default function Services() {
               <p className="text-white/45 text-[13px] mt-0.5">Contáctanos — ofrecemos soluciones personalizadas.</p>
             </div>
             <a
-              href="https://wa.me/573001234567"
+              href="https://wa.me/573003684990"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary flex items-center gap-2 px-5 py-2.5 rounded-xl text-[13px] shrink-0"

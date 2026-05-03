@@ -5,7 +5,7 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { ArrowRight, ChevronDown, Play, Wifi, Camera, Server, ShieldCheck } from 'lucide-react';
 import ParticleBackground from './ParticleBackground';
 
-const WHATSAPP = 'https://wa.me/573001234567?text=Hola%2C%20me%20interesa%20una%20asesor%C3%ADa%20tecnol%C3%B3gica';
+const WHATSAPP = 'https://wa.me/573003684990?text=Hola%2C%20me%20interesa%20una%20asesor%C3%ADa%20tecnol%C3%B3gica';
 
 export default function Hero() {
   const containerRef = useRef<HTMLDivElement>(null);

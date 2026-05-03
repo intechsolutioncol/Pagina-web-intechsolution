@@ -5,7 +5,7 @@ import { motion, useInView } from 'framer-motion';
 import { MessageCircle, ArrowRight, Sparkles } from 'lucide-react';
 import ParticleBackground from './ParticleBackground';
 
-const WHATSAPP = 'https://wa.me/573001234567?text=Hola%2C%20quiero%20evolucionar%20tecnol%C3%B3gicamente%20mi%20empresa';
+const WHATSAPP = 'https://wa.me/573003684990?text=Hola%2C%20quiero%20evolucionar%20tecnol%C3%B3gicamente%20mi%20empresa';
 
 export default function FinalCTA() {
   const ref = useRef<HTMLElement>(null);
@@ -97,7 +97,7 @@ export default function FinalCTA() {
           </motion.a>
 
           <motion.a
-            href="mailto:info@intechsolution.co"
+            href="mailto:ceo@intechsolution.com.co"
             className="btn-ghost flex items-center gap-3 px-8 py-4 rounded-2xl text-[15px] w-full sm:w-auto justify-center"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.97 }}
