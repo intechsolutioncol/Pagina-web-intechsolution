@@ -1,5 +1,7 @@
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
+import AboutSection from '@/components/AboutSection';
+import PartnersStrip from '@/components/PartnersStrip';
 import Services from '@/components/Services';
 import BusinessOptimization from '@/components/BusinessOptimization';
 import WhyChooseUs from '@/components/WhyChooseUs';
@@ -13,6 +15,8 @@ export default function HomePage() {
     <main className="relative overflow-hidden">
       <Navbar />
       <Hero />
+      <AboutSection />
+      <PartnersStrip />
       <Services />
       <BusinessOptimization />
       <WhyChooseUs />
