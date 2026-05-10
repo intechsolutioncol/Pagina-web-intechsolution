@@ -7,7 +7,9 @@ import ParticleBackground from './ParticleBackground';
 
 const WHATSAPP = 'https://wa.me/573003684990?text=Hola%2C%20me%20interesa%20una%20asesor%C3%ADa%20tecnol%C3%B3gica';
 
-export default function Hero() {
+interface HeroProps { onAsesoriaClick?: () => void; }
+
+export default function Hero({ onAsesoriaClick }: HeroProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({ target: containerRef, offset: ['start start', 'end start'] });
   const y       = useTransform(scrollYProgress, [0, 1], ['0%', '28%']);
@@ -75,17 +77,15 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.42 }}
           >
-            <motion.a
-              href={WHATSAPP}
-              target="_blank"
-              rel="noopener noreferrer"
+            <motion.button
+              onClick={onAsesoriaClick}
               className="btn-primary inline-flex items-center gap-2.5 px-7 py-3.5 rounded-2xl text-[15px] justify-center"
               whileHover={{ scale: 1.04 }}
               whileTap={{ scale: 0.97 }}
             >
               Solicitar Asesoría Gratuita
               <ArrowRight size={16} />
-            </motion.a>
+            </motion.button>
             <motion.a
               href="#servicios"
               className="btn-ghost inline-flex items-center gap-2.5 px-7 py-3.5 rounded-2xl text-[15px] justify-center"

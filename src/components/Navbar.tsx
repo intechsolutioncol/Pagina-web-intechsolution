@@ -14,7 +14,9 @@ const NAV_LINKS = [
 
 const WHATSAPP = 'https://wa.me/573003684990?text=Hola%2C%20me%20interesa%20una%20asesor%C3%ADa%20tecnol%C3%B3gica';
 
-export default function Navbar() {
+interface NavbarProps { onAsesoriaClick?: () => void; }
+
+export default function Navbar({ onAsesoriaClick }: NavbarProps) {
   const [scrolled, setScrolled]   = useState(false);
   const [menuOpen, setMenuOpen]   = useState(false);
   const [activeLink, setActiveLink] = useState('');
@@ -74,10 +76,8 @@ export default function Navbar() {
 
           {/* ── CTA ── */}
           <div className="hidden lg:flex items-center gap-3">
-            <motion.a
-              href={WHATSAPP}
-              target="_blank"
-              rel="noopener noreferrer"
+            <motion.button
+              onClick={onAsesoriaClick}
               className="btn-primary flex items-center gap-2 px-5 py-2.5 rounded-xl text-[13px]"
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
@@ -88,7 +88,7 @@ export default function Navbar() {
               <Phone size={13} className="shrink-0" />
               Solicitar Asesoría
               <ChevronRight size={13} className="shrink-0" />
-            </motion.a>
+            </motion.button>
           </div>
 
           {/* ── Mobile Toggle ── */}

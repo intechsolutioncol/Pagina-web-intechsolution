@@ -7,7 +7,9 @@ import ParticleBackground from './ParticleBackground';
 
 const WHATSAPP = 'https://wa.me/573003684990?text=Hola%2C%20quiero%20evolucionar%20tecnol%C3%B3gicamente%20mi%20empresa';
 
-export default function FinalCTA() {
+interface FinalCTAProps { onAsesoriaClick?: () => void; }
+
+export default function FinalCTA({ onAsesoriaClick }: FinalCTAProps) {
   const ref = useRef<HTMLElement>(null);
   const inView = useInView(ref, { once: true, margin: '-80px' });
 
@@ -83,18 +85,16 @@ export default function FinalCTA() {
           transition={{ duration: 0.6, delay: 0.38 }}
           className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-12"
         >
-          <motion.a
-            href={WHATSAPP}
-            target="_blank"
-            rel="noopener noreferrer"
+          <motion.button
+            onClick={onAsesoriaClick}
             className="btn-primary flex items-center gap-3 px-8 py-4 rounded-2xl text-[15px] font-semibold w-full sm:w-auto justify-center glow-md"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.97 }}
           >
             <MessageCircle size={18} />
-            Hablar por WhatsApp
+            Solicitar Asesoría Gratuita
             <ArrowRight size={16} />
-          </motion.a>
+          </motion.button>
 
           <motion.a
             href="mailto:ceo@intechsolution.com.co"
