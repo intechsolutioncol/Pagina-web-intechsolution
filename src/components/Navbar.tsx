@@ -145,25 +145,24 @@ export default function Navbar({ onAsesoriaClick }: NavbarProps) {
 
 function LogoMark() {
   return (
-    <svg width="38" height="38" viewBox="0 0 100 106" fill="none" xmlns="http://www.w3.org/2000/svg">
-      {/* Shield base — blue fill */}
-      <path d="M50 3L12 17V54C12 77 29 93 50 103C71 93 88 77 88 54V17Z" fill="#2E8BCF"/>
-      {/* Top angular tabs — blue detail */}
-      <path d="M12 17L28 10L50 3L72 10L88 17L72 24L50 16L28 24Z" fill="#1A6FAD"/>
-      {/* Dark orbital swoosh — covers most of shield */}
-      <path d="M70 6C90 16 98 38 92 60C86 80 68 92 48 90C28 88 14 74 12 58C10 42 20 26 36 18L50 12Z" fill="#0A1520"/>
-      {/* Blue accent wing — bottom left */}
-      <path d="M12 70Q18 88 36 87Q22 94 8 83Z" fill="#2E8BCF"/>
-      {/* Eye — outer white ring */}
-      <circle cx="50" cy="54" r="18" fill="white"/>
-      {/* Eye — blue ring */}
-      <circle cx="50" cy="54" r="13.5" fill="#2E8BCF"/>
-      {/* Eye — inner white */}
-      <circle cx="50" cy="54" r="8.5" fill="white"/>
-      {/* Eye — pupil */}
-      <circle cx="50" cy="54" r="5" fill="#2E8BCF"/>
-      {/* Eye — shine */}
-      <circle cx="53.5" cy="50.5" r="2.2" fill="rgba(255,255,255,0.9)"/>
+    <svg width="36" height="36" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+      {/* Outer blue orbit swoosh */}
+      <ellipse cx="50" cy="58" rx="38" ry="14" stroke="#2E8BCF" strokeWidth="3.5" fill="none"
+        strokeDasharray="120 80" strokeLinecap="round" transform="rotate(-20 50 58)" opacity="0.8"/>
+      {/* Shield body */}
+      <path d="M50 8L82 22V50C82 70 67 84 50 92C33 84 18 70 18 50V22L50 8Z"
+        fill="#03263A" stroke="#2E8BCF" strokeWidth="2.5"/>
+      {/* Inner shield */}
+      <path d="M50 18L72 29V50C72 64 62 75 50 81C38 75 28 64 28 50V29L50 18Z"
+        fill="#0B0F14"/>
+      {/* Lens outer ring */}
+      <circle cx="50" cy="50" r="14" fill="none" stroke="#2E8BCF" strokeWidth="1.5" opacity="0.5"/>
+      {/* Lens */}
+      <circle cx="50" cy="50" r="9" fill="rgba(46,139,207,0.25)"/>
+      {/* Pupil */}
+      <circle cx="50" cy="50" r="5" fill="#2E8BCF"/>
+      {/* Shine */}
+      <circle cx="52.5" cy="47.5" r="1.8" fill="rgba(255,255,255,0.75)"/>
     </svg>
   );
 }
